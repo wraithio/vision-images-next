@@ -1,53 +1,40 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const NavbarComponent = () => {
   return (
-    <div className="text-white">
-      <nav
-        id="navbar"
-        className=" absolute w-full flex bg-black backdrop-opacity-40 h-40 justify-center items-center"
-      >
-        <ul className="flex justify-evenly">
-          <li>
-            <Link
-              className="text-3xl hover:text-orange-300 hover:underline"
-              href="#"
-            >
-              ABOUT
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="text-3xl hover:text-orange-300 hover:underline"
-              href="#"
-            >
-              GALLERY
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="text-3xl hover:text-orange-300 hover:underline"
-              href="#"
-            >
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-        <div>
-          <Link
-            href="https://www.youtube.com/@visionimages-vipv"
-            target="_blank"
-          >
-            <img
-              className="yt-logo"
-              src="/icons/youtube.png"
-              alt="youtube logo"
-            />
-          </Link>
-        </div>
-      </nav>
-    </div>
+    <nav
+      id="navbar"
+      className="absolute top-0 z-10 w-full flex justify-center bg-transparent h-20"
+    >
+      <div className="flex place-items-center gap-12">
+      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+        GALLERY
+      </Link>
+
+      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+        ABOUT
+      </Link>
+
+
+      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+        CONTACT
+      </Link>
+      </div>
+
+      <div>
+        <Link href="https://www.youtube.com/@visionimages-vipv" target="_blank">
+          <Image
+            width={100}
+            height={100}
+            className="w-14 absolute right-3 top-3"
+            src="/icons/youtube.png"
+            alt="youtube logo"
+          />
+        </Link>
+      </div>
+    </nav>
   );
 };
 
