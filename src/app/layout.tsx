@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FooterComponent from "@/components/FooterComponent";
 
 export const metadata: Metadata = {
   title: "Vision Images",

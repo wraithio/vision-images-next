@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -43,8 +44,34 @@ button{
   width: fit-content;
   padding: .25rem 1rem;
   border: 1px white solid;
+  font-family: "Inter-Light",Arial, Helvetica, sans-serif;
 }
+
 button:hover{
   color: black;
   background: white;
+}
+
+input{
+  border: 1px solid white;
+  border-radius: .25rem;
+  font-family: "Inter-Light",Arial, Helvetica, sans-serif;
+  padding: 2px .5rem;
+}
+
+input:focus{
+  backdrop-filter: blur(3px);
+  text-shadow: #0a0a0a 1rem;
+}
+
+textarea{
+  border: 1px solid white;
+  border-radius: .25rem;
+  font-family: "Inter-Light",Arial, Helvetica, sans-serif;
+  padding: 2px .5rem;
+}
+
+textarea:focus{
+  backdrop-filter: blur(3px);
+  text-shadow: #0a0a0a 1rem;
 }

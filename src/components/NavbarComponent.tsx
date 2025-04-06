@@ -6,19 +6,19 @@ const NavbarComponent = () => {
   return (
     <nav
       id="navbar"
-      className="absolute top-0 z-10 w-full flex justify-center bg-transparent h-20"
+      className="absolute top-0 z-10 w-full flex justify-center bg-gradient-to-t from-transparent to-black h-20"
     >
       <div className="flex place-items-center gap-12">
-      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+      <Link className="text-xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
         GALLERY
       </Link>
 
-      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+      <Link className="text-xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
         ABOUT
       </Link>
 
 
-      <Link className="text-2xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
+      <Link className="text-xl hover:text-orange-300 hover:animate-[bounce_3s_infinite]" href="#">
         CONTACT
       </Link>
       </div>
